@@ -8,5 +8,7 @@ for i in range(0, number_of_pairs):
     value = input()
     data_pairs[key] = value
     
-for key, value in data_pairs.items():
+sorted_data = sorted(data_pairs.items())   
+    
+for key, value in sorted_data:
     print(key + ':' + value)
